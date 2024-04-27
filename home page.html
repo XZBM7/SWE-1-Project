@@ -94,20 +94,30 @@
         }
 
         .menu {
-            position: fixed;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 10px;
-            z-index: 1000;
-        }
+    position: fixed;
+    top: 0;
+    bottom: 0; 
+    left: 10px;
+    z-index: 1000;
+}
 
-        .menu .item {
-            display: block;
-            font-size: 30px;
-            text-decoration: none;
-            margin-bottom: 40px;
-            transition: transform 0.3s ease;
-        }
+.menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -15px; 
+    width: 1px; 
+    background-color: rgb(69, 69, 69); 
+}
+
+.menu .item {
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
 
         .effect1:hover {
             transform: scale(1.2);
@@ -217,18 +227,72 @@
             color: white;
             text-align: right;
         }
+        nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+    
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(72, 12, 96); 
+   font-weight: bold; 
+
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f3e7e7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+
+  .dropdown-content a {
+    color: #4b4b4b;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgb(86, 86, 86);
+    color: #070707;
+
+  }
+               
     </style>
     <script>
-        window.onload = function() {
-            setTimeout(function() {
-                var splashScreen = document.getElementById('splash-screen');
-                var mainContent = document.getElementById('main-content');
+        document.addEventListener('DOMContentLoaded', function() {
+            var splashScreen = document.getElementById('splash-screen');
+            var mainContent = document.getElementById('main-content');
 
+            setTimeout(function() {
                 splashScreen.style.display = 'none';
                 mainContent.style.display = 'block';
-            }, 2500);
-        };
+            }, 1);
+        });
     </script>
+    
 </head>
 <body>
     <div id="splash-screen">
@@ -236,16 +300,30 @@
     </div>
 
     <h1 style="text-align: right;">Nightgram</h1>
-
+    
     <div class="menu">
-        <a href="#" class="item effect1">📷</a>
-        <a href="#" class="item effect2">🏠</a>
+            <div class="dropdown">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#" class="item effect8">☰</a>
+                            <div class="dropdown-content">
+                                <a href=""> الاعدادات</a>
+                                <a href="">تبديل المظهر</a>
+                                <a href="http://localhost:3000/feedback.html">الابلاغ عن مشكلة</a>
+                                <a href="">تسجيل الخروج</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>      
+        <a href="http://localhost:3000/home%20page.html" class="item effect2">🏠</a>
         <a href="#" class="item effect3">🔍</a>
         <a href="#" class="item effect4">❤️</a>
         <a href="#" class="item effect5">➕</a>
         <a href="#" class="item effect6">📩</a>
-        <a href="#" class="item effect7">👤</a>
-        <a href="#" class="item effect8">☰</a>
+        <a href="http://localhost:3000/profile.html" class="item effect7">👤</a>
+        <a href="http://localhost:3000/home%20page.html" class="item effect1">📷</a>
     </div>
 
     <div class="icons-container">

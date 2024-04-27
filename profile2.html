@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title> edite profile </title>
+  <style>
+
+    
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    
+  }
+
+  .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+ 
+
+  .profile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(138, 138, 138, 0.1);
+    border-radius: 5px;
+  }
+
+  .profile-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile-info h2, .profile-info p {
+    margin: 0;
+    color: rgb(255, 255, 255);
+
+  }
+
+  .profile-info button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5e5e5e;
+    color: rgb(255, 255, 255);
+  }
+
+  .profile-info button:hover {
+    background-color: #45a049;
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+  }
+
+  header {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px ;
+    font-size: 140%;
+   position: sticky;
+    top: 0px;
+   width: 100%;
+    z-index: 1000;
+   }
+
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+    
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: blue; 
+   font-weight: bold; 
+  }
+  
+  
+  main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .product {
+    padding: 5px;
+    border: 1px solid #070707;
+    border-radius: 5px;
+    text-align: center;
+   font-weight: bold; 
+  }
+
+  .product img {
+    width: 60%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-height: 50px;
+  }
+  
+  .product .price {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fc0404;
+  }
+
+  button {
+    padding: 8px 16px;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255) 4, 252;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+
+  }
+
+  footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px; 
+    
+  }
+
+  .contact-info p {
+    font-size: 14px; 
+    margin: 5px 0; 
+    font-weight: bold; 
+    
+
+  }
+
+  .footer-small-text {
+    font-size: 15px; 
+    font-weight: bold; 
+
+  }
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    z-index: 1;
+    
+  }
+
+  .dropdown-content a {
+    color: #fc0404;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: red;
+    color: #070707;
+
+  }
+
+.social-links {
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: center;
+margin-bottom: 10px;
+}
+
+.social-links li {
+margin: 0 5px;
+font-size: medium;
+}
+
+
+</style>
+<body>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="http://localhost:3000/home%20page.html">🏠</a>
+            <li><a href="http://localhost:3000/profile.html">👤</a></li>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        </header>
+  <div class="profile">
+    <img src="https://alhilal.com/imgs/teams/5736084916.png" alt="image">
+    <div class="profile-info">
+      <div>
+        <h2>البيانات الشخصيه</h2>
+      </div>
+      <a href=""> 
+      <button>تعديل البيانات</button>
+      </a>
+    </div>
+
+    <div class="profile-info">
+      <div>
+        <h2> خصوصية الحساب</h2>
+      </div>
+      <a href="flow2.html">
+        <button> تعديل الخصوصية  </button></a>
+    </div>
+
+
+    <div class="profile-info">
+      <div>
+        <h2>اللغة</h2>
+      </div>
+      <a href="">
+        <button> اختيار وتعديل لغة </button></a>
+    </div>
+
+    <div class="profile-info">
+        <div>
+          <h2>الاشعارات</h2>
+        </div>
+        <a href="">
+          <button>ضبط الاشعارات </button></a>
+      </div>
+
+      <div class="profile-info">
+        <div>
+          <h2>الصورة الشخصية</h2>
+        </div>
+        <a href="">
+          <button>تغيير الصورة الشخصية  </button></a>
+      </div>
+
+      <div class="profile-info">
+        <div>
+          <h2>حاله الحساب</h2>
+        </div>
+        <a href="st.html">
+          <button>حالة حسابي</button></a>
+      </div>
+
+      <div class="profile-info">
+        <div>
+          <h2>المساعدات والشكاوي </h2>
+        </div>
+        <a href="st.html">
+          <button>تقديم شكوى</button></a>
+      </div>
+
+      <div class="profile-info">
+        <div>
+          <h2>حول</h2>
+        </div>
+        <a href="st.html">
+          <button> Nightgram حول</button></a>
+      </div>
+    
+    <div class="profile-info">
+      <div>
+        <h2>تسجيل الخروج</h2>
+      </div>
+      <a href="log.html"><button>تسجيل الخروج</button></a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="contact-info">
+    <h3>   💬 تواصل معنا </h3>
+    <p> Nightgram@gmail.com : 📧 للتواصل </p>
+    <h3>💡 نحن جاهزون لمساعدتك </h3>
+    <p> Nightgram.com : 📧 مركز المساعدة </p>
+    <p>  Nightgram@z.com :✉️ الدعم بالبريد الالكتروني </p>
+<p class="footer-small-text">جميع الحقوق محفوظة &copy; 2024</p>
+</footer>
+</body>
+</html>
