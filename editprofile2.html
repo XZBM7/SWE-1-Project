@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>edit Profile  </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
+            margin: 0;
+        }
+
+        .tracking-container {
+            max-width: 500px;
+            padding: 30px;
+            background-color: #7e7e7e;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .tracking-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .tracking-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #828282;
+            font-size: 16px;
+        }
+
+        .track-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .track-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .shipment-details {
+            text-align: left;
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #6c6c6c;
+            border-radius: 5px;
+        }
+
+        .shipment-details h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tracking-container">
+        <h2>تعديل المعلومات الشخصيه </h2>
+        <input type="text" class="tracking-input" placeholder="اسم المستخدم الجديد  ">
+        <input type="text" class="tracking-input" placeholder="تحديث الحاله ">
+        <input type="text" class="tracking-input" placeholder="اضافة رابط  ">
+        <button class="track-btn">تاكيد </button>
+        <a href="http://localhost:3000/editprofile.html">
+        <button class="track-btn">العودة</button>
+</a>
+        
+
+</body>
+
+</html>

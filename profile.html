@@ -188,6 +188,23 @@
             background-color: rgb(86, 86, 86);
             color: #070707;
         }
+        
+        .w {
+            margin: 10px 0;
+        }
+        .e {
+            color: #ffffff; 
+            text-decoration: none; 
+            padding: 5px 10px;
+            background-color: #000000;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .e:hover {
+            background-color: #000000; 
+        }
+
+       
     </style>
 </head>
 <body>
@@ -195,15 +212,15 @@
         <div class="profile-info">
             <h2>اسم الحساب</h2>
             <button onclick="changeImage()">تغيير الصورة</button>
-            <button onclick="window.location.href = '#'">تعديل الملف الشخصي</button>
+            <button onclick="window.location.href = 'http://localhost:3000/profile2.html'">تعديل الملف الشخصي</button>
             <button onclick="editProfile()">  اضف قصه</button>
         </div>
         <img src="#" alt="">
     </div>
     <div class="stats">
-        <p>عدد المنشورات: <span id="postsCount">100</span></p>
-        <p>المتابعون: <span id="followersCount">500</span></p>
-        <p>اتابع: <span id="followersCount">500</span></p>
+        <p class="w">عدد المنشورات: <span id="postsCount">100</span></p>
+        <p class="w"><a href="http://localhost:3000/frindes2.html" id="followersLink" class="e">المتابعون: <span id="followersCount">500</span></a></p>
+        <p class="w"><a href="http://localhost:3000/frindes.html" id="followingLink" class="e">أتابع: <span id="followingCount">500</span></a></p>
     </div>
     <div class="menu">
         <div class="dropdown">
@@ -212,7 +229,7 @@
                     <li>
                         <a href="#" class="item effect8">☰</a>
                         <div class="dropdown-content">
-                            <a href=""> الاعدادات</a>
+                            <a href="http://localhost:3000/profile2.html"> الاعدادات</a>
                             <a href="">تبديل المظهر</a>
                             <a href="http://localhost:3000/feedback.html">الابلاغ عن مشكلة</a>
                             <a href="">تسجيل الخروج</a>
